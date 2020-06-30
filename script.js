@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     $(document).on("click", ".saved-button", function () {
         var cityName = $(this).text();
-        var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=a0a661e14f2fa47b84d518a6c1889db2"
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=a0a661e14f2fa47b84d518a6c1889db2"
 
         $.ajax({
             url: queryURL,
@@ -48,7 +48,7 @@ $(document).ready(function () {
                 var cityWindSpeed = response.wind.speed;
                 $("#city-windspeed").text(cityWindSpeed);
 
-                var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=a0a661e14f2fa47b84d518a6c1889db2" + "&lat=" + response.coord.lat + "&lon=" + response.coord.lon
+                var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=a0a661e14f2fa47b84d518a6c1889db2" + "&lat=" + response.coord.lat + "&lon=" + response.coord.lon
 
                 $.ajax({
                     url: queryURL,
@@ -77,7 +77,7 @@ $(document).ready(function () {
 
             )
 
-        var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=a0a661e14f2fa47b84d518a6c1889db2"
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=a0a661e14f2fa47b84d518a6c1889db2"
 
         $.ajax({
             url: queryURL,
@@ -121,7 +121,7 @@ $(document).ready(function () {
     $(document).on("click", ".search-button", function () {
 
         var cityName = $("#city-text").val();
-        var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=a0a661e14f2fa47b84d518a6c1889db2"
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=a0a661e14f2fa47b84d518a6c1889db2"
 
         $.ajax({
             url: queryURL,
@@ -139,7 +139,7 @@ $(document).ready(function () {
                 var cityWindSpeed = response.wind.speed;
                 $("#city-windspeed").text(cityWindSpeed);
 
-                var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=a0a661e14f2fa47b84d518a6c1889db2" + "&lat=" + response.coord.lat + "&lon=" + response.coord.lon
+                var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=a0a661e14f2fa47b84d518a6c1889db2" + "&lat=" + response.coord.lat + "&lon=" + response.coord.lon
 
                 $.ajax({
                     url: queryURL,
@@ -169,7 +169,7 @@ $(document).ready(function () {
 
             )
 
-        var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=a0a661e14f2fa47b84d518a6c1889db2"
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=a0a661e14f2fa47b84d518a6c1889db2"
 
         $.ajax({
             url: queryURL,
